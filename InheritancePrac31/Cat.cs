@@ -1,6 +1,10 @@
-﻿namespace InheritancePrac31
+﻿using System;
+
+namespace InheritancePrac31
 {
-    internal class Cat
+    internal class Cat : Animal
     {
+
+        public void Meow() { Console.WriteLine("냥냥 웁니다."); }
     }
 }
