@@ -11,6 +11,11 @@ namespace InheritancePrac31
     {
         static void Main(string[] args)
         {
+            Dog d = new Dog();
+            d.Public();
+            //d.Protected();
+            //d.Private();
+
             List<Animal> animals = new List<Animal>() { 
                 new Dog(), new Dog(), new Dog(), 
                 new Cat(), new Cat(), new Cat() 
