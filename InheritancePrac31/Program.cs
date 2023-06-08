@@ -18,11 +18,30 @@ namespace InheritancePrac31
 
             foreach (var item in animals)
             {
-                    item.Eat();
-                    item.Sleep();
+                item.Eat();
+                item.Sleep();
 
+                Dog dog = item as Dog;
+                if(dog != null)
+                {
+                    dog.Bark();
+                }
+                Cat cat = item as Cat;
+                if(cat != null)
+                {
+                    cat.Meow();
+                }
+
+
+                if(item is Dog)
+                {
                     ((Dog)item).Bark();
+                }else if(item is Cat)
+                {
                     ((Cat)item).Meow();
+                }
+                    
+                    
             }
         }
     }
