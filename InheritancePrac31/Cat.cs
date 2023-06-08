@@ -10,7 +10,7 @@ namespace InheritancePrac31
 
         public void TestB()
         {
-            Private();
+            //Private();
             Protected();
             Public();
         }
